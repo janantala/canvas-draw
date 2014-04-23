@@ -1,0 +1,26 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="canvas-draw" attributes="width height background color">
+
+  <template>
+      <canvas width="{{width}}" heigh="{{height}}"></canvas>
+  </template>
+
+  <script>
+    Polymer('canvas-draw', {
+      /* -- Attributes ------------------------------------------------ */
+      width: 100,
+      height: 100,
+      background: 'white',
+      color: 'black'
+
+      /* -- Lifecycle ------------------------------------------------- */
+    });
+
+    var canvas = document._currentScript.ownerDocument.querySelector('canvas-draw');
+    var ctx = canvas.getContext('2d');
+  </script>
+
+</polymer-element>
