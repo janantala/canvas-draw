@@ -1,0 +1,28 @@
+{
+  "name": "canvas-draw",
+  "version": "0.1.0",
+  "description": "Canvas Draw Web Component",
+  "keywords": ["polymer", "canvas", "draw", "web-components"],
+  "authors": ["Jan Antala <hello@janantala.com>"],
+  "license": "MIT",
+  "homepage": "https://github.com/janantala/canvas-draw",
+  "main": "./src/canvas-draw.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janantala/canvas-draw.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test*",
+    "demo*",
+    "package.json"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#~0.2.3",
+    "polymer": "Polymer/polymer#~0.2.3"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "canvas-draw",
+  "version": "0.1.0",
+  "description": "Canvas Draw Web Component",
+  "keywords": ["polymer", "canvas", "draw", "web-components"],
+  "authors": ["Jan Antala <hello@janantala.com>"],
+  "license": "MIT",
+  "homepage": "https://github.com/janantala/canvas-draw",
+  "main": "./src/canvas-draw.html",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.5.0",
+    "gulp-util": "~2.2.9",
+    "gulp-uglify": "~0.2.0",
+    "gulp-header": "~1.0.2",
+    "gulp-concat": "~2.1.7",
+    "gulp-rename": "~0.2.2",
+    "gulp-jshint": "~1.3.4",
+    "gulp-conventional-changelog": "~0.1.2"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/janantala/canvas-draw.git"
+  }
+}
