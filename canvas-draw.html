@@ -5,7 +5,7 @@
 <polymer-element name="canvas-draw" attributes="width height background color">
 
   <template>
-      <canvas width="{{width}}" heigh="{{height}}"></canvas>
+      <canvas id="canvas" width="{{width}}" heigh="{{height}}"></canvas>
   </template>
 
   <script>
@@ -14,13 +14,15 @@
       width: 100,
       height: 100,
       background: 'white',
-      color: 'black'
+      color: 'black',
 
       /* -- Lifecycle ------------------------------------------------- */
+      created: function () {
+        var canvas = this.$.canvas;
+        var ctx = canvas.getContext('2d');
+      }
     });
 
-    var canvas = document._currentScript.ownerDocument.querySelector('canvas-draw');
-    var ctx = canvas.getContext('2d');
   </script>
 
 </polymer-element>
